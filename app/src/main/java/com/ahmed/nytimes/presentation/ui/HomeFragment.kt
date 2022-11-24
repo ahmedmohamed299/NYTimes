@@ -8,12 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.fragment.findNavController
 import com.ahmed.nytimes.R
 import com.ahmed.nytimes.data.utils.Resource
 import com.ahmed.nytimes.databinding.FragmentHomeBinding
 import dagger.hilt.android.AndroidEntryPoint
-import dagger.hilt.android.HiltAndroidApp
 
 @AndroidEntryPoint
 class HomeFragment : Fragment() {
@@ -25,9 +23,8 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        // Inflate the layout for this fragment
+
         binding=DataBindingUtil.inflate(inflater,R.layout.fragment_home,container,false)
-//            findNavController().navigate(R.id.action_homeFragment_to_detailsFragment)
         viewModel=(activity as MainActivity).viewModel
         initRecycler()
 
@@ -46,8 +43,8 @@ class HomeFragment : Fragment() {
                 }
                 is Resource.Success ->{
                     Log.d("Ahmed123", "Success: ")
-                    it.data?.let {
-                        adapter.differ.submitList(it.toList())
+                    it.data?.let { mostPopularModelList ->
+                        adapter.differ.submitList(mostPopularModelList.toList())
                     }
 
                 }
@@ -59,9 +56,5 @@ class HomeFragment : Fragment() {
         }
     }
 
-    companion object {
 
-        @JvmStatic
-        fun newInstance() = HomeFragment()
-    }
 }

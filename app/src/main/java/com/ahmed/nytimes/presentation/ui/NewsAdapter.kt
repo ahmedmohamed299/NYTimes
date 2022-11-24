@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ahmed.nytimes.R
 import com.ahmed.nytimes.data.model.MostPopularModel
 import com.ahmed.nytimes.databinding.NewsItemBinding
+import com.bumptech.glide.Glide
 
 class NewsAdapter : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
 
@@ -37,7 +38,21 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(mostPopular: MostPopularModel) {
-            binding.model=mostPopular
+            binding.model = mostPopular
+            if (mostPopular.media.isNotEmpty() ) {
+                Glide
+                    .with(binding.root.context)
+                    .load(mostPopular.media[0].mediaMetadata[2].url)
+                    .placeholder(R.drawable.backgraund_gradient)
+
+                    .into(binding.imageView)
+
+
+            }
+
+
+
+
             binding.container.setOnClickListener {
                 Log.d("Ahmed123", "bind:$mostPopular ")
 //                binding.root.findNavController().navigate(R.id.action_homeFragment_to_detailsFragment)

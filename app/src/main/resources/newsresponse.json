@@ -1,0 +1,139 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2022 The New York Times Company.  All Rights Reserved.",
+  "num_results": 20,
+  "results": [
+    {
+      "uri": "nyt://article/ad66eb62-15bc-56cd-852e-ac1101c08f9d",
+      "url": "https://www.nytimes.com/article/university-idaho-students-killed-moscow.html",
+      "id": 100000008643177,
+      "asset_id": 100000008643177,
+      "source": "New York Times",
+      "published_date": "2022-11-19",
+      "updated": "2022-11-23 18:49:30",
+      "section": "U.S.",
+      "subsection": "",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Murders, Attempted Murders and Homicides;Colleges and Universities;Chapin, Ethan (d 2022);Goncalves, Kaylee (d 2022);Kernodle, Xana (d 2022);Mogen, Madison (d 2022);University of Idaho;Moscow (Idaho)",
+      "column": null,
+      "byline": "By Mike Baker and Nicholas Bogel-Burroughs",
+      "type": "Article",
+      "title": "1,000 Tips, No Suspects: Latest on the University of Idaho Killings",
+      "abstract": "The gruesome stabbing deaths of four University of Idaho students remain unsolved 10 days later. The police asked the public to continue sending tips.",
+      "des_facet": [
+        "Murders, Attempted Murders and Homicides",
+        "Colleges and Universities"
+      ],
+      "org_facet": [
+        "University of Idaho"
+      ],
+      "per_facet": [
+        "Chapin, Ethan (d 2022)",
+        "Goncalves, Kaylee (d 2022)",
+        "Kernodle, Xana (d 2022)",
+        "Mogen, Madison (d 2022)"
+      ],
+      "geo_facet": [
+        "Moscow (Idaho)"
+      ],
+      "media": [],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/e49807c9-a281-5a71-b6c5-ea24975030ed",
+      "url": "https://www.nytimes.com/2022/11/21/us/colorado-springs-shooting-club-q-hero.html",
+      "id": 100000008649420,
+      "asset_id": 100000008649420,
+      "source": "New York Times",
+      "published_date": "2022-11-21",
+      "updated": "2022-11-22 23:57:05",
+      "section": "U.S.",
+      "subsection": "",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Colorado Springs Shooting (Nov, 2022);Veterans;Content Type: Personal Profile;Fierro, Richard M;Colorado Springs (Colo)",
+      "column": null,
+      "byline": "By Dave Philipps",
+      "type": "Article",
+      "title": "Army Veteran Went Into ‘Combat Mode’ to Disarm the Club Q Gunman",
+      "abstract": "Richard M. Fierro, who served for 15 years in the military, was at the nightclub in Colorado Springs with his family when the gunman opened fire. “I just knew I had to take him down,” he said.",
+      "des_facet": [
+        "Colorado Springs Shooting (Nov, 2022)",
+        "Veterans",
+        "Content Type: Personal Profile"
+      ],
+      "org_facet": [],
+      "per_facet": [
+        "Fierro, Richard M"
+      ],
+      "geo_facet": [
+        "Colorado Springs (Colo)"
+      ],
+      "media": [],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/a7838d76-b5b6-5726-bf6c-1a2145859d44",
+      "url": "https://www.nytimes.com/2022/11/14/us/university-idaho-deaths.html",
+      "id": 100000008637341,
+      "asset_id": 100000008637341,
+      "source": "New York Times",
+      "published_date": "2022-11-14",
+      "updated": "2022-11-17 13:54:43",
+      "section": "U.S.",
+      "subsection": "",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Murders, Attempted Murders and Homicides;Colleges and Universities;Chapin, Ethan (d 2022);Mogen, Madison (d 2022);Kernodle, Xana (d 2022);Goncalves, Kaylee (d 2022);University of Idaho;Moscow (Idaho)",
+      "column": null,
+      "byline": "By Rachel Sun, Mike Baker, Nicholas Bogel-Burroughs and Serge F. Kovaleski",
+      "type": "Article",
+      "title": "4 University of Idaho Students Killed in ‘Crime of Passion’",
+      "abstract": "The authorities were still piecing together what had transpired at a home near the University of Idaho campus.",
+      "des_facet": [
+        "Murders, Attempted Murders and Homicides",
+        "Colleges and Universities"
+      ],
+      "org_facet": [
+        "University of Idaho"
+      ],
+      "per_facet": [
+        "Chapin, Ethan (d 2022)",
+        "Mogen, Madison (d 2022)",
+        "Kernodle, Xana (d 2022)",
+        "Goncalves, Kaylee (d 2022)"
+      ],
+      "geo_facet": [
+        "Moscow (Idaho)"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Officers are investigating the deaths of four University of Idaho students at an apartment complex south of campus on Sunday. The authorities said they were treating the case as a homicide.",
+          "copyright": "Zach Wilkinson/The Moscow-Pullman Daily News, via Associated Press",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/11/14/multimedia/14nat-idaho-deaths-1-b274/14nat-idaho-deaths-1-b274-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/11/14/multimedia/14nat-idaho-deaths-1-b274/14nat-idaho-deaths-1-b274-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/11/14/multimedia/14nat-idaho-deaths-1-b274/14nat-idaho-deaths-1-b274-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    }
+  ]
+}

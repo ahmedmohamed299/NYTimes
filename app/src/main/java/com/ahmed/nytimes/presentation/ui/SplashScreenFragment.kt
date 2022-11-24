@@ -25,7 +25,7 @@ class SplashScreenFragment : Fragment() {
     ): View {
         binding= DataBindingUtil.inflate(inflater,R.layout.fragment_splash_screen,container,false)
 
-//        fullScreen()
+        fullScreen()
         anim()
 
         return binding.root
@@ -65,17 +65,17 @@ class SplashScreenFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-//        (activity as AppCompatActivity).supportActionBar!!.show()
-//
-//        @Suppress("DEPRECATION")
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-//            requireActivity().window.insetsController?.show(WindowInsets.Type.statusBars())
-//        } else {
-//            requireActivity().window.setFlags(
-//                WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN,
-//                WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN
-//            )
-//        }
+        (activity as AppCompatActivity).supportActionBar!!.show()
+
+        @Suppress("DEPRECATION")
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            requireActivity().window.insetsController?.show(WindowInsets.Type.statusBars())
+        } else {
+            requireActivity().window.setFlags(
+                WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN
+            )
+        }
     }
 
 }

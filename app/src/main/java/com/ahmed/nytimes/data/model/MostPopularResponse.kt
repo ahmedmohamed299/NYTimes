@@ -5,6 +5,4 @@ data class MostPopularResponse(
     var num_results: Int,
     var results: List<MostPopularModel>,
     var status: String
-) {
-
-}
+)

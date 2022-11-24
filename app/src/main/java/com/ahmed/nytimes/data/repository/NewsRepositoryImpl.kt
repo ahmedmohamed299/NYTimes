@@ -1,6 +1,5 @@
 package com.ahmed.nytimes.data.repository
 
-import android.content.ContentValues.TAG
 import android.util.Log
 import com.ahmed.nytimes.data.model.MostPopularModel
 import com.ahmed.nytimes.data.repository.dataSorce.NewsRemoteDataSource
