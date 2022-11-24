@@ -1,6 +1,5 @@
 package com.ahmed.nytimes.presentation.ui
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController
@@ -19,7 +18,6 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
             oldItem: MostPopularModel,
             newItem: MostPopularModel
         ): Boolean {
-            Log.d("ahmedmohamed", "areItemsTheSame: ${oldItem.id}++ ${newItem.id}")
             return oldItem.id == newItem.id
         }
 
@@ -39,23 +37,27 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
 
         fun bind(mostPopular: MostPopularModel) {
             binding.model = mostPopular
-            if (mostPopular.media.isNotEmpty() ) {
-                Glide
-                    .with(binding.root.context)
-                    .load(mostPopular.media[0].mediaMetadata[2].url)
-                    .placeholder(R.drawable.backgraund_gradient)
+            var image: Any 
+            if (mostPopular.media.isNotEmpty()) {
+                mostPopular.media.let {
+                    image = it[0].mediaMetadata[2].url
+                }
 
-                    .into(binding.imageView)
-
+            } else {
+                image = R.drawable.logo
 
             }
+            Glide
+                .with(binding.root.context)
+                .load(image)
+                .error(R.drawable.logo)
+                .placeholder(R.drawable.backgraund_gradient)
+                .into(binding.imageView)
 
 
 
 
             binding.container.setOnClickListener {
-                Log.d("Ahmed123", "bind:$mostPopular ")
-//                binding.root.findNavController().navigate(R.id.action_homeFragment_to_detailsFragment)
                 binding.root.findNavController()
                     .navigate(HomeFragmentDirections.actionHomeFragmentToDetailsFragment(mostPopular))
 

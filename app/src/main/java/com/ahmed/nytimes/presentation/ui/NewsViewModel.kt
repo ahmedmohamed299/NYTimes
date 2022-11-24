@@ -1,6 +1,5 @@
 package com.ahmed.nytimes.presentation.ui
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -29,14 +28,10 @@ class NewsViewModel @Inject constructor(
 
 
             viewModelScope.launch(Dispatchers.IO) {
-                Log.d("ahmed", "getNewsFromApis: IO ")
 
 
                 newsMutableLiveData.postValue(getNewsFromApisUseCase.execute())
-                Log.d(
-                    "ahmed",
-                    "getNewsFromApisViewModel: "
-                )
+
 
 
 

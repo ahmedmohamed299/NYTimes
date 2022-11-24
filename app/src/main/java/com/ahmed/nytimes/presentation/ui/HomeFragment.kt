@@ -34,7 +34,6 @@ class HomeFragment : Fragment() {
     private fun initRecycler() {
         binding.newsRecycler.adapter=adapter
         viewModel.getNewsFromApis().observe(viewLifecycleOwner){
-            Log.d("ahmed123", "initRecycler: ")
 
             when (it){
 
@@ -42,14 +41,13 @@ class HomeFragment : Fragment() {
                     Toast.makeText(requireActivity(), "loading", Toast.LENGTH_LONG).show()
                 }
                 is Resource.Success ->{
-                    Log.d("Ahmed123", "Success: ")
                     it.data?.let { mostPopularModelList ->
                         adapter.differ.submitList(mostPopularModelList.toList())
                     }
 
                 }
                 is Resource.Error ->{
-                    Log.d("Ahmed123", "Error:${it.message} ")
+                    Log.d("ResourceError", "Error:${it.message} ")
 
                 }
             }
