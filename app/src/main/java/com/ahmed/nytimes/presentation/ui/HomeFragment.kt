@@ -27,6 +27,7 @@ class HomeFragment : Fragment() {
         binding=DataBindingUtil.inflate(inflater,R.layout.fragment_home,container,false)
         viewModel=(activity as MainActivity).viewModel
         initRecycler()
+        onBackPressed()
 
         return binding.root
     }
@@ -54,5 +55,24 @@ class HomeFragment : Fragment() {
         }
     }
 
+       private fun onBackPressed() {
+
+        val onBackPressedCallback = object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                if (Navigation
+                        .findNavController(requireActivity(), R.id.fragment_container_view)
+                        .currentDestination?.id == R.id.homeFragment
+                ) {
+
+                    requireActivity().finish()
+                }
+            }
+        }
+        requireActivity().onBackPressedDispatcher.addCallback(
+            requireActivity(),
+            onBackPressedCallback
+        )
+
+    }
 
 }
